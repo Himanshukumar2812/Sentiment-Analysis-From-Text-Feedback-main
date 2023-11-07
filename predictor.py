@@ -6,6 +6,7 @@ import streamlit as st
 import pickle
 import joblib
 import base64
+from PIL import Image
 
 # Download stopwords and initialize PorterStemmer
 nltk.download('stopwords')
@@ -59,6 +60,11 @@ st.markdown("""
         <h1 style='text-align: center; font-weight: bold; color: #190019;'>Welcome to Restaurant Review System using Sentiment Analysis</h1>
         <h2 style='text-align: center;color: #2B124C'>Enter your review:</h2>
     """, unsafe_allow_html=True)
+
+background_image = Image.open('background-image.png')
+image_width = 400  # Adjust the width as needed
+image = background_image.resize((image_width, int(image_width / background_image.width * background_image.height)))
+st.image(image, use_column_width=True)
 
 # Add custom CSS for the "Predict" button and the "Type your review here" text
 st.markdown(
