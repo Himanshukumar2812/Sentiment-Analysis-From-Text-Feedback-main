@@ -2,7 +2,7 @@
 ## Online deployment
 We have deployed our project on cloud using streamlit. It can be accessed using the following link:
 
- (https://sentiment-analysis-from-text-feedback-main.streamlit.app/)
+ -[Review Website on StreamLit](https://sentiment-analysis-from-text-feedback-main.streamlit.app/)
 
 ## Running the project locally
 #### Steps to be followed:
